@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-
+# source 'https://rubygems.org'
+source 'https://ruby.taobao.org/'
 RAILS_VERSION = '~> 4.1.11'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
@@ -70,7 +70,7 @@ group :development do
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails',   require: false
   gem 'capistrano-rbenv',   require: false
-
+  gem 'capistrano-rvm', require: false
   # better errors
   gem 'better_errors'
   gem 'binding_of_caller', platform: 'ruby'
